@@ -1,0 +1,266 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Sreehitha Madiraju</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      scroll-behavior: smooth;
+      background: linear-gradient(135deg, #050505, #252525); /* Subtle gradient background */
+    }
+
+    /* Section animation: fade-in and slide-up */
+    .block {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .block.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hover effect for images */
+    .hover-effect:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    }
+
+    /* Back-to-Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      background: #555;
+      transform: scale(1.1);
+    }
+  </style>
+ </head>
+ <body class="bg-[#f3f4f6] font-serif p-8">
+  <!-- Profile Section -->
+  <section class="block max-w-6xl mx-auto p-8 bg-white rounded-lg shadow-lg mb-12">
+    <div class="flex items-center space-x-12">
+      <div class="border border-gray-700 w-48 h-64 flex flex-col justify-center hover-effect">
+        <img alt="Your Profile Picture" class="w-full h-full object-cover" height="256" src="C:\Users\masre\OneDrive\Desktop\ME\Sreehitha.jpg" width="192" />
+      </div>
+      <div class="text-center">
+        <h1 class="text-2xl font-normal leading-tight">Sreehitha Madiraju</h1>
+        <p class="text-xs mt-1">CS UNDERGRAD</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="block max-w-6xl mx-auto p-8 bg-white rounded-lg shadow-lg mb-12">
+    <h1 class="text-4xl font-serif mb-6 text-center">About Me (she/her)</h1>
+    <p class="text-lg font-serif leading-relaxed max-w-xl mx-auto text-center">
+      Hey there! I’m Sreehitha Madiraju, a passionate and curious Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. I love building things—from AI-powered apps to cool project ideas that mix tech with creativity. Whether it’s developing smart solutions, exploring robotics, or collaborating in hackathons, I’m always excited to learn, create, and grow. I believe that innovation begins with curiosity, and I bring that spirit into every project I work on.
+    </p>
+  </section>
+
+  <!-- Education & Other Works Section -->
+  <section class="block max-w-6xl mx-auto p-8 bg-white rounded-lg shadow-lg mb-12">
+    <h1 class="text-4xl font-serif mb-6 text-center">🎓 Education & Other Works</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Bachelor's Degree -->
+      <div class="p-6 bg-[#f5e6e0] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">Bachelor’s Degree in Computer Science and Engineering (AIML)</h3>
+        <p>Stanley College of Engineering and Technology for Women</p>
+        <p>2023 – 2027</p>
+        <p>GPA: 8.0</p>
+      </div>
+
+      <!-- Intermediate Education -->
+      <div class="p-6 bg-[#f3e5d7] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">Intermediate Education</h3>
+        <p>Narayana Junior College</p>
+        <p>2021 – 2023</p>
+      </div>
+
+      <!-- High School Education -->
+      <div class="p-6 bg-[#e8d8c3] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">High School Education</h3>
+        <p>Narayana High School</p>
+        <p>2017 – 2021</p>
+      </div>
+
+      <!-- Volunteer Work -->
+      <div class="p-6 bg-[#f4dcd6] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">Volunteer Digital Head</h3>
+        <p class="italic">Hyderabad Youth Assembly</p>
+        <p class="italic">March 2024 to August 2024</p>
+        <p>Volunteered to run the foundation's social media accounts and spearhead its digital marketing efforts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="block max-w-6xl mx-auto p-8 bg-white rounded-lg shadow-lg mb-12">
+    <h2 class="text-3xl font-serif mb-6 text-center">🚀 Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 bg-[#f5e6e0] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">Developer – Expense Tracker for Teens (Ongoing)</h3>
+        <p class="text-sm leading-relaxed mb-3">2024 – Present</p>
+        <p class="leading-relaxed mb-1">Tech Stack: Python</p>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>Developed a financial tracking app for teens with a clean, easy-to-navigate interface.</li>
+          <li>Promoted smart money habits through engaging, accessible design.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-[#f3e5d7] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">Developer – Book Website (Ongoing)</h3>
+        <p class="text-sm leading-relaxed mb-3">2024 – Present</p>
+        <p class="leading-relaxed mb-1">Tech Stack: HTML, CSS, JavaScript</p>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>Designed and developed a genre-specific website for thrillers, mysteries, and horror.</li>
+          <li>Created a visually rich and responsive user experience focused on curated content and community interaction.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-[#e8d8c3] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">Team Lead – SPrep Project (Ongoing)</h3>
+        <p class="text-sm leading-relaxed mb-3">2025 - Present</p>
+        <p class="leading-relaxed mb-1">Tech Stack: HTML, CSS, JavaScript | UI/UX: Figma</p>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>Managed planning, task delegation, and feature integration for modules like study schedules, quizzes, mock tests, and a chatbot.</li>
+          <li>Designed an intuitive user interface in Figma tailored to student needs.</li>
+          <li>Built a privacy-focused, responsive platform for a seamless learning experience.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-[#f4dcd6] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-1">Team Lead – Insight Bot</h3>
+        <p class="text-sm leading-relaxed mb-3">Hackathon at MVSR</p>
+        <p class="leading-relaxed mb-1">Tech Stack: HTML, CSS, JavaScript | UI/UX: Figma</p>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>Designed and developed a chatbot to help students with stress and academic planning.</li>
+          <li>Focused on smooth, user-friendly design even under time constraints.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Proficiencies Section -->
+  <section class="block max-w-6xl mx-auto p-8 bg-white rounded-lg shadow-lg mb-12">
+    <h2 class="text-3xl font-serif mb-6 text-center">🛠️ Skills & Proficiencies</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Technical Skills -->
+      <div class="p-6 bg-[#f5e6e0] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-2">Technical Skills</h3>
+        <p>Languages &amp; Tools:</p>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>C, HTML, CSS, SQL</li>
+          <li>JavaScript (familiar), Python (familiar), Java (familiar)</li>
+          <li>UI/UX Design: User Interface Design (Figma)</li>
+        </ul>
+      </div>
+
+      <!-- Currently Learning -->
+      <div class="p-6 bg-[#f3e5d7] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-2">Currently Learning</h3>
+        <p>Backend Development:</p>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>Server-side scripting</li>
+          <li>Databases</li>
+          <li>APIs</li>
+        </ul>
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="p-6 bg-[#e8d8c3] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-2">Professional Skills</h3>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>Project Management: Oversee workflows, timelines, and deliverables.</li>
+          <li>Teamwork: Collaborate with cross-functional teams.</li>
+          <li>Time Management: Prioritize tasks efficiently.</li>
+          <li>Leadership: Guide teams and inspire toward shared goals.</li>
+          <li>Effective Communication: Convey ideas and provide feedback.</li>
+          <li>Critical Thinking: Analyze problems and make informed decisions.</li>
+        </ul>
+      </div>
+
+      <!-- Languages -->
+      <div class="p-6 bg-[#f4dcd6] text-black rounded-lg shadow-lg">
+        <h3 class="font-bold mb-2">Languages</h3>
+        <ul class="list-disc list-inside leading-relaxed">
+          <li>Telugu (Fluent)</li>
+          <li>Hindi (Fluent)</li>
+          <li>English (Fluent)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section class="block max-w-6xl mx-auto p-8 bg-gray-600 text-white rounded-lg shadow-lg mb-12">
+    <h2 class="text-3xl font-serif mb-6 text-center">📬 Connect with Me</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Contact Information -->
+      <div class="p-6">
+        <p class="font-bold text-lg mb-2">Sreehitha Madiraju</p>
+        <p class="mb-4">Email: <a href="mailto:masreehi41@gmail.com" class="text-yellow-400 hover:underline">masreehi41@gmail.com</a></p>
+        <p class="mb-4">
+          <a href="C:\Users\masre\Downloads\resume.pdf" target="_blank" class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500">View My Resume</a>
+        </p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="p-6 flex items-center justify-center space-x-6">
+        <a href="https://www.linkedin.com/in/sreehitha-madiraju-6099b6277?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRIGWrGI7Rhu%2FfRXXI71vYw%3D%3D" target="_blank" aria-label="LinkedIn profile" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+        <a href="https://github.com/SreehithaMadiraJU" target="_blank" aria-label="GitHub profile" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back-to-Top Button -->
+  <div class="back-to-top" onclick="scrollToTop()" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script>
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Intersection Observer for block animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    document.querySelectorAll('.block').forEach((block) => {
+      observer.observe(block);
+    });
+  </script>
+ </body>
+</html>
