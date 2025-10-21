@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sreehitha Madiraju | UI/UX Designer</title>
+    <title>Sreehitha Madiraju | UI/UX Designer | Student </title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -24,8 +24,9 @@
         }
 
         :root {
-            --accent-purple: #9333ea; /* Purple-600 */
-            --accent-purple-light: #a855f7; /* Purple-500 */
+            /* NEW: Subtle accent colors */
+            --accent-color: #a1a1aa; /* Zinc-400 */
+            --accent-color-light: #d4d4d8; /* Zinc-300 */
             --bg-dark: #111111;
             --bg-light: #18181b; /* Zinc-900 */
             --border-color: #3f3f46; /* Zinc-700 */
@@ -33,7 +34,7 @@
 
         /* Hero gradient text */
         .gradient-text {
-            background: linear-gradient(to right, #ffffff, #d8b4fe); /* White to Light Purple */
+            background: linear-gradient(to right, #ffffff, #e4e4e7); /* White to Zinc-200 */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -67,7 +68,7 @@
             transition: all 0.3s ease;
         }
         .swiper-slide:hover {
-            border-color: var(--accent-purple);
+            border-color: var(--accent-color); /* NEW: Subtle border hover */
             transform: translateY(-5px);
         }
         .swiper-slide a {
@@ -98,7 +99,6 @@
         .swiper-slide .project-desc {
             font-size: 0.875rem;
             color: #a0a0a0;
-            /* Limit description to 3 lines */
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -107,7 +107,7 @@
         }
         .swiper-slide .project-link {
             font-weight: 500;
-            color: var(--accent-purple-light);
+            color: var(--accent-color-light); /* NEW: Subtle link color */
             transition: all 0.3s ease;
         }
         .swiper-slide:hover .project-link {
@@ -140,7 +140,7 @@
             background: #fff;
         }
         .swiper-pagination-bullet-active {
-            background: var(--accent-purple);
+            background: var(--accent-color); /* NEW: Subtle pagination */
         }
 
         /* Custom Section Title */
@@ -168,13 +168,13 @@
                     I am a passionate designer transitioning into the world of UI/UX, driven by a goal to create simple, beautiful, and user-focused digital experiences. Currently, I'm deepening my expertise in human-centered design, design systems, and prototyping.
                 </p>
                 
-                <a href="Sreehitha Madiraju _ Resume.." target="_blank" class="inline-block bg-purple-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors duration-300 text-lg">
+                <a href="Sreehitha Madiraju _ Resume.." target="_blank" class="inline-block bg-zinc-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-zinc-700 transition-colors duration-300 text-lg">
                     View My Resume
                 </a>
             </div>
 
             <div class="flex justify-center md:justify-end">
-                <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-purple-600 shadow-2xl shadow-purple-900/50">
+                <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-zinc-500 shadow-2xl shadow-zinc-700/50">
                     
                     <img src="your-photo.jpg" alt="Sreehitha Madiraju" class="w-full h-full object-cover" 
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
@@ -192,20 +192,17 @@
             <h2 class="section-title">Education</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-bg-light p-6 rounded-xl border border-border-color">
-                    <p class="text-sm font-medium text-purple-400">2023 - Present</p>
-                    <h3 class="text-xl font-semibold text-white mt-2">B.Tech, Computer Science (AI/ML)</h3>
+                    <p class="text-sm font-medium text-zinc-500">2023 - Present</p> <h3 class="text-xl font-semibold text-white mt-2">B.Tech, Computer Science (AI/ML)</h3>
                     <p class="text-gray-400 mt-1">Stanley College of Engineering and Technology For Women</p>
                     <p class="text-gray-400 mt-1">CGPA: 8.1</p>
                 </div>
                 <div class="bg-bg-light p-6 rounded-xl border border-border-color">
-                    <p class="text-sm font-medium text-purple-400">2021 - 2023</p>
-                    <h3 class="text-xl font-semibold text-white mt-2">Intermediate (MPC)</h3>
+                    <p class="text-sm font-medium text-zinc-500">2021 - 2023</p> <h3 class="text-xl font-semibold text-white mt-2">Intermediate (MPC)</h3>
                     <p class="text-gray-400 mt-1">Narayana Junior College</p>
                     <p class="text-gray-400 mt-1">Grade: A</p>
                 </div>
                 <div class="bg-bg-light p-6 rounded-xl border border-border-color">
-                    <p class="text-sm font-medium text-purple-400">2021</p>
-                    <h3 class="text-xl font-semibold text-white mt-2">School (10th Grade)</h3>
+                    <p class="text-sm font-medium text-zinc-500">2021</p> <h3 class="text-xl font-semibold text-white mt-2">School (10th Grade)</h3>
                     <p class="text-gray-400 mt-1">Narayana High School</p>
                     <p class="text-gray-400 mt-1">CGPA: 10</p>
                 </div>
@@ -229,8 +226,7 @@
                 <div class="bg-bg-dark p-6 rounded-xl border border-border-color">
                     <h3 class="text-2xl font-semibold text-white mb-4">Volunteering</h3>
                     <p class="text-lg font-medium text-gray-200">Digital Head, Hyderabad Youth Association</p>
-                    <p class="text-sm text-purple-400 mb-2">Street Cause Project (Mar–Aug 2024)</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                    <p class="text-sm text-zinc-500 mb-2">Street Cause Project (Mar–Aug 2024)</p> <ul class="list-disc list-inside space-y-2 text-gray-300">
                         <li>Raised ₹8.3K for charity</li>
                         <li>Managed social media campaigns</li>
                     </ul>
@@ -257,7 +253,7 @@
 
                 <div class="swiper-slide under-construction">
                     <a href="#" aria-disabled="true" class="cursor-not-allowed">
-                        <img src="https://source.unsplash.com/random/800x600?cooking,ingredients" alt="Smartly Cook" class="project-image" />
+                        <img src="https://img.freepik.com/free-photo/top-view-cropped-hands-senior-cook-unrecognizable-cutting-carrot-cooking-vegetable-stew_1098-20510.jpg" alt="Smartly Cook" class="project-image" />
                         <div class="project-content">
                             <div>
                                 <h3 class="project-title">UI/UX Designer - Smartly Cook App</h3>
@@ -270,7 +266,7 @@
 
                 <div class="swiper-slide">
                     <a href="https://www.figma.com/design/dis3JaYNTFuUjBESwsgfwo/FLIPD?node-id=0-1&t=tEMwIHMFuZzuIrQH-1" target="_blank">
-                        <img src="https://source.unsplash.com/random/800x600?book,thriller" alt="Flipd" class="project-image" />
+                        <img src="flipd .jpg" alt="Flipd" class="project-image" />
                         <div class="project-content">
                             <div>
                                 <h3 class="project-title">UI/UX Developer - Flipd</h3>
@@ -283,7 +279,7 @@
 
                 <div class="swiper-slide">
                     <a href="https://sreehithamadiraju.github.io/Sprep/signin.html" target="_blank">
-                        <img src="https://source.unsplash.com/random/800x600?student,studying" alt="SPrep App" class="project-image" />
+                        <img src="https://thumbs.dreamstime.com/z/student-studying-books-notes-educational-learning-concept-illustration-surrounded-study-materials-representing-326456763.jpg" alt="SPrep App" class="project-image" />
                         <div class="project-content">
                             <div>
                                 <h3 class="project-title">Team Lead & Developer - SPrep App</h3>
@@ -296,7 +292,7 @@
 
                 <div class="swiper-slide">
                     <a href="https://internstracker.streamlit.app/" target="_blank">
-                        <img src="https://source.unsplash.com/random/800x600?dashboard,analytics" alt="Interns Tracker" class="project-image" />
+                        <img src="https://media.istockphoto.com/id/1455958730/vector/data-monitoring-and-analysis-on-desktop-tiny-people-with-magnifying-glass-research-graph.jpg?s=612x612&w=0&k=20&c=aL-XEnEBILCzi-qX_7tUn84FH7Ei_YoJTxlcGCY0Vb8=" alt="Interns Tracker" class="project-image" />
                         <div class="project-content">
                             <div>
                                 <h3 class="project-title">Team Lead - Interns Tracker</h3>
@@ -309,7 +305,7 @@
                 
                 <div class="swiper-slide">
                     <a href="https://acs-tracker-q9ac3vwzs9xkwtrecwx5c3.streamlit.app/" target="_blank">
-                        <img src="https://source.unsplash.com/random/800x600?data,chart" alt="ACS Tracker" class="project-image" />
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/938/014/non_2x/resumes-in-ats-applicant-tracking-system-process-vector.jpg" class="project-image" />
                         <div class="project-content">
                             <div>
                                 <h3 class="project-title">Developer - ACS Tracker</h3>
@@ -322,7 +318,7 @@
 
                 <div class="swiper-slide">
                     <a href="https://lnkd.in/g2KyjaRc" target="_blank">
-                        <img src="https://source.unsplash.com/random/800x600?chatbot,robot" alt="Insight Bot" class="project-image" />
+                        <img src="https://media.istockphoto.com/id/1454952504/vector/chatbot-customer-service-abstract-concept-vector-illustration.jpg?s=612x612&w=0&k=20&c=47QqdLeONvMAwWOsCXnO7ACKZN5v_iE1PXx9fumLY9Y=" alt="Insight Bot" class="project-image" />
                         <div class="project-content">
                             <div>
                                 <h3 class="project-title">Developer - MVSR Hackathon Insight Bot</h3>
@@ -342,7 +338,7 @@
         <div class="max-w-7xl mx-auto">
             <h2 class="section-title">Certifications & Learning</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-purple-900/50 p-8 rounded-xl border-2 border-purple-500 text-center">
+                <div class="bg-zinc-800/50 p-8 rounded-xl border-2 border-zinc-500 text-center">
                     <i class="fas fa-star text-3xl text-yellow-400 mb-4"></i>
                     <h3 class="text-xl font-semibold text-white">Currently Learning</h3>
                     <p class="text-lg text-gray-200 mt-2">
@@ -366,10 +362,10 @@
         <div class="max-w-3xl mx-auto">
             <h2 class="text-4xl font-bold text-white mb-4">I'm Open to Opportunities</h2>
             <p class="text-xl text-gray-400 mb-8">
-                I'm actively looking for UI/UX design internships and freelance projects. If you have an opportunity or just want to connect, my inbox is always open!
-            </p>
+                I'm actively looking for UI/UX design internships and  projects. If you have an opportunity or just want to connect, my inbox is always open!
+            </s/p>
             <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="mailto:masreehi41@gmail.com" class="bg-purple-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-purple-700 transition-colors duration-300 text-lg">
+                <a href="mailto:masreehi41@gmail.com" class="bg-zinc-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-zinc-700 transition-colors duration-300 text-lg">
                     <i class="fas fa-envelope mr-2"></i> Email Me
                 </a>
                 <a href="http://www.linkedin.com/in/sreehitha-madiraju" target="_blank" class="bg-gray-700 text-white font-semibold px-8 py-4 rounded-lg hover:bg-gray-600 transition-colors duration-300 text-lg">
@@ -381,8 +377,7 @@
 
     <footer class="text-center py-8 border-t border-border-color">
         <p class="text-gray-500">
-            &copy; 2025 Sreehitha Madiraju. Designed & Built with <i class="fas fa-heart text-purple-500"></i>
-        </p>
+            &copy; 2025 Sreehitha Madiraju. Designed & Built with love ❤️ </p>
     </footer>
 
     <script>
